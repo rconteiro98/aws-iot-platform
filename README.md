@@ -41,6 +41,9 @@ Designed and implemented a cloud-connected IoT monitoring platform that integrat
 |-- style.css                      # Dashboard styling
 |-- simple-demo.html               # Earlier standalone sensor demo
 |-- config.example.js              # Public-safe runtime config template
+|-- lambdas/
+|   |-- iot_ingest_lambda.py       # AWS IoT ingestion Lambda for sensor/RFID/heartbeat events
+|   `-- README.md
 |-- WaterLevelReader/
 |   `-- WaterLevelReader/
 |       |-- platformio.ini
@@ -82,6 +85,8 @@ window.SENSORWATCH_CONFIG = {
 ## Firmware Prototype
 
 The `WaterLevelReader` folder contains an Arduino MKR WiFi 1010 / PlatformIO prototype for reading multiple analogue water sensors, smoothing readings with a moving window, and classifying sensor states as dry, wet, or drying.
+
+The `lambdas` folder contains the public-safe Python Lambda ingestion function used to process sensor, RFID, and heartbeat events into PostgreSQL-backed tables.
 
 The public repository does not include AWS IoT certificates or live device credentials.
 
