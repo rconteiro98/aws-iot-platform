@@ -1,0 +1,19 @@
+# Local runtime configuration
+config.js
+
+# AWS IoT certificates and device credentials
+AWS Arduino/AWS Certs/
+**/*private*.key
+**/*certificate*.crt
+**/*.pem
+
+# PlatformIO build output
+.pio/
+.vscode/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

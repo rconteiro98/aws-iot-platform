@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetness Detection System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Wetness Detection Dashboard</h1>
+            <p id="system-status">System Status: <span class="status-online">Online</span></p>
+        </header>
+
+        <div class="sensor-grid">
+            <div class="sensor-card" id="sensor-1">
+                <div class="indicator green"></div>
+                <div class="sensor-info">
+                    <h2>Sensor 1</h2>
+                    <p class="reading">Dry</p>
+                </div>
+                <button class="simulate-btn" onclick="toggleSensor(1)">Simulate Wet</button>
+            </div>
+
+            <div class="sensor-card" id="sensor-2">
+                <div class="indicator green"></div>
+                <div class="sensor-info">
+                    <h2>Sensor 2</h2>
+                    <p class="reading">Dry</p>
+                </div>
+                <button class="simulate-btn" onclick="toggleSensor(2)">Simulate Wet</button>
+            </div>
+
+            <div class="sensor-card" id="sensor-3">
+                <div class="indicator green"></div>
+                <div class="sensor-info">
+                    <h2>Sensor 3</h2>
+                    <p class="reading">Dry</p>
+                </div>
+                <button class="simulate-btn" onclick="toggleSensor(3)">Simulate Wet</button>
+            </div>
+
+            <div class="sensor-card" id="sensor-4">
+                <div class="indicator green"></div>
+                <div class="sensor-info">
+                    <h2>Sensor 4</h2>
+                    <p class="reading">Dry</p>
+                </div>
+                <button class="simulate-btn" onclick="toggleSensor(4)">Simulate Wet</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
